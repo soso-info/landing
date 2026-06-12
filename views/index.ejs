@@ -10,7 +10,19 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9Oer+R4HENyzhK5Nq9jo5v0tY3zYarjK8qzE2aM1g"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="/src/style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+      defer
+    ></script>
     <script src="/src/script.js" defer></script>
   </head>
   <body>
@@ -61,8 +73,8 @@
           </ul>
 
           <div class="hero-actions">
-            <a class="button primary" href="#planos">Começar agora</a>
-            <a class="button ghost" href="#problema">Saber mais</a>
+            <a class="btn button primary" href="#planos">Começar agora</a>
+            <a class="btn button ghost" href="#problema">Saber mais</a>
           </div>
         </div>
 
@@ -98,22 +110,22 @@
         </p>
 
         <div class="cards two-columns">
-          <article class="card">
+          <article class="card h-100">
             <span class="icon">01</span>
             <h3>Celular sempre do lado</h3>
             <p>Pequenas olhadas viram minutos perdidos e quebram sua concentração.</p>
           </article>
-          <article class="card">
+          <article class="card h-100">
             <span class="icon">02</span>
             <h3>Redes sociais roubam tempo</h3>
             <p>Você fecha o aplicativo achando que passou pouco tempo, mas a tarde sumiu.</p>
           </article>
-          <article class="card">
+          <article class="card h-100">
             <span class="icon">03</span>
             <h3>Tudo fica para a ultima hora</h3>
             <p>Trabalhos, provas e revisões acumulam até virar pressão e cansaço.</p>
           </article>
-          <article class="card">
+          <article class="card h-100">
             <span class="icon">04</span>
             <h3>Culpa constante</h3>
             <p>Você promete mudar, mas no dia seguinte cai no mesmo ciclo.</p>
@@ -126,19 +138,19 @@
         <h2>Perfeito para você se você quer estudar com seriedade</h2>
 
         <div class="cards two-columns">
-          <article class="accent-card">
+          <article class="accent-card h-100">
             <h3>Estudantes do Ensino Medio</h3>
             <p>Equilibre matérias, tarefas e provas sem viver no desespero da última hora.</p>
           </article>
-          <article class="accent-card">
+          <article class="accent-card h-100">
             <h3>Vestibulandos</h3>
             <p>Monte uma rotina com revisões, simulados e blocos de foco bem definidos.</p>
           </article>
-          <article class="accent-card">
+          <article class="accent-card h-100">
             <h3>Quem luta com constância</h3>
             <p>Crie pequenas vitórias diárias até a disciplina ficar natural.</p>
           </article>
-          <article class="accent-card">
+          <article class="accent-card h-100">
             <h3>Quem quer melhorar notas</h3>
             <p>Troque motivação momentânea por hábitos que geram resultado real.</p>
           </article>
@@ -187,7 +199,7 @@
         </div>
         <form class="calc-box">
           <label for="minutes">Minutos perdidos por dia</label>
-          <input id="minutes" type="number" min="5" max="600" value="90" />
+          <input class="form-control" id="minutes" type="number" min="5" max="600" value="90" />
           <output id="result">Você pode recuperar 45 horas em 30 dias.</output>
         </form>
       </section>
@@ -197,24 +209,24 @@
         <h2>Escolha seu nível de compromisso</h2>
 
         <div class="cards three-columns">
-          <article class="price-card">
+          <article class="price-card h-100">
             <h3>Base</h3>
             <p class="price">R$ 29</p>
             <p>Checklist de rotina, cronograma semanal e mapa de distrações.</p>
-            <a class="button ghost dark" href="#contato">Quero começar</a>
+            <a class="btn button ghost dark" href="#contato">Quero começar</a>
           </article>
-          <article class="price-card featured">
-            <span class="tag">Mais escolhido</span>
+          <article class="price-card featured h-100">
+            <span class="badge tag">Mais escolhido</span>
             <h3>Aço</h3>
             <p class="price">R$ 59</p>
             <p>Método completo, simulador de foco, revisões e plano de 30 dias.</p>
-            <a class="button primary" href="#contato">Entrar no método</a>
+            <a class="btn button primary" href="#contato">Entrar no método</a>
           </article>
-          <article class="price-card">
+          <article class="price-card h-100">
             <h3>Mentoria</h3>
             <p class="price">R$ 99</p>
             <p>Acompanhamento, ajustes de rotina e metas semanais personalizadas.</p>
-            <a class="button ghost dark" href="#contato">Quero evoluir</a>
+            <a class="btn button ghost dark" href="#contato">Quero evoluir</a>
           </article>
         </div>
       </section>
@@ -229,11 +241,11 @@
         <form class="contact-form">
           <label>
             Nome
-            <input type="text" name="name" placeholder="Seu nome" required />
+            <input class="form-control" type="text" name="name" placeholder="Seu nome" required />
           </label>
           <label>
             Objetivo principal
-            <select name="goal" required>
+            <select class="form-select" name="goal" required>
               <option value="">Selecione</option>
               <option>Melhorar notas</option>
               <option>Passar no vestibular</option>
@@ -243,9 +255,9 @@
           </label>
           <label>
             Email
-            <input type="email" name="email" placeholder="voce@email.com" required />
+            <input class="form-control" type="email" name="email" placeholder="voce@email.com" required />
           </label>
-          <button class="button primary" type="submit">Receber plano</button>
+          <button class="btn button primary" type="submit">Receber plano</button>
           <p class="form-message" role="status"></p>
         </form>
       </section>
